@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Penguin Sliders!</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                align-items: center;
+                overflow-x: hidden;
+            }
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: 20px;
+                max-width: 900px;
+            }
+            .content img {
+                height: 450px;
+                width: 450px;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            }
+            .content p {
+                width: calc(100% - 470px);
+                font-size: 35px;
+                padding: 10px;
+            }
+            .content:nth-child(4) {
+                flex-direction: row-reverse;
+            }
+            .download {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0 40px 0;
+            }
+            .download a {
+                display: inline-block;
+                background-color: #1e90ff;
+                color: white;
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 20px;
+                transition: background-color 0.3s ease;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            }
+            .download a:hover {
+                background-color: #1c86ee;
+            }
+            .intro {
+                font-size: 35px;
+                text-align: center;
+                color: white;
+                background-color: #1e90ff;
+                padding: 20px;
+                border-radius: 5px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .title {
+                font-size: 55px; 
+                text-align: center;
+                color: #1e90ff;
+                margin-top: 20px;
+            }
+            .subtitle {
+                text-align: center; 
+                font-size: 45px;
+                color: #1e90ff;
+                margin-bottom: 20px;
+            }
+            .footer {
+                background-color: #1e90ff;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: sticky;
+                bottom: 0;
+                width: 100%;
+                font-size: 14px;
+            }
+            @media (max-width: 900px) {
+                .content {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .content img, .content p {
+                    width: 80%;
+                    height: auto;
+                }
+                .content:nth-child(4) {
+                    flex-direction: column;
+                }
+                .intro, .title, .subtitle {
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body style="background-color: darkturquoise;">
+        <p class="title">Penguin Sliders</p>
+        <p class="subtitle">A game about a parkouring penguin.</p>
+        <p class="intro">In this game, you will test your parkouring skills as a penguin sliding across ice and rock.</p>
+        <div class="content">
+            <img src="P1.png" alt="Penguin"/>
+            <p>Climb up big mountains filled with dangerous ice spikes.</p>
+        </div>
+        <div class="content">
+            <img src="P2.png" alt="Penguin2"/>
+            <p>Move with the ice when it's moving.</p>
+        </div>
+        <div class="download">
+            <a href="Penguin Slider.exe" download="Penguin Sliders">Download Penguin Sliders</a>
+        </div>
+        <div class="footer">
+            <p>© 2023 Penguin Sliders. All rights reserved.</p>
+        </div>
+    </body>
+</html>
